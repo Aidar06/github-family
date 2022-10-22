@@ -1,0 +1,34 @@
+@import "global";
+
+#header{
+  backdrop-filter: blur(5px);
+  background: rgba(0, 0, 0, 0.74);
+  padding: 30px 0;
+  .navbar{
+    @include align();
+    &--logo{
+      display: flex;
+      align-items: center;
+      &__info{
+        p{
+          font-weight: 400;
+          font-size: 8px;
+          color: #FFFFFF;
+          line-height: 10px;
+        }
+      }
+    }
+    &--nav{
+      a{
+        font-weight: 500;
+        font-size: 14px;
+        padding: 0 30px;
+        color: #9099A3;
+        transition: .4s;
+        &:hover{
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
+}
