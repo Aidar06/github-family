@@ -97,3 +97,86 @@
     }
   }
 }
+
+#webinars{
+  background: #1E2023;
+  padding: 50px 0;
+  .webinars{
+    &--title{
+      font-weight: 700;
+      font-size: 36px;
+      color: #FFFFFF;
+    }
+    &--btn{
+      display: flex;
+      padding: 10px 0;
+      button{
+        margin: 0 10px;
+      }
+      &__button{
+        padding: 10px 20px;
+        font-weight: 500;
+        font-size: 18px;
+        color: #2C3E50;
+        transition: .4s;
+        border-radius: 10px;
+        border: none;
+        &:hover{
+          background: transparent;
+          border: 1px solid wheat;
+          transform: scale(1.1);
+          color: wheat;
+        }
+      }
+
+      &__button1{
+        @include btn();
+      }
+    }
+      &--block{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+          &__var{
+            width: 48%;
+            height: 300px;
+            background: #FFFFFF;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin:20px 0;
+            border-radius: 20px;
+            &--group{
+              div{
+                a{
+                  font-weight: 400;
+                  font-size: 12px;
+                  padding: 0 10px;
+                  color: #9099A3;
+                }
+              }
+
+              h1{
+                font-weight: 700;
+                font-size: 20px;
+                color: #2C3E50;
+                padding-top: 20px;
+              }
+
+              p{
+                font-weight: 400;
+                font-size: 16px;
+                color: #2C3E50;
+                padding-top: 10px;
+              }
+
+              button{
+                @include btn();
+                margin-top: 60px;
+              }
+            }
+          }
+      }
+  }
+}
