@@ -220,4 +220,74 @@ body {
   color: red;
 }
 
+#choice {
+  background: #1E2023;
+  padding: 20px 0;
+}
+#choice .choice {
+  display: flex;
+  justify-content: space-around;
+}
+#choice .choice--block h1 {
+  font-weight: 700;
+  font-size: 36px;
+  color: #FFFFFF;
+}
+#choice .choice--block p {
+  font-weight: 400;
+  font-size: 18px;
+  color: #9099A3;
+}
+#choice .choice--group {
+  width: 60%;
+}
+#choice .choice--group__input {
+  margin-bottom: 20px;
+}
+#choice .choice--group__input p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #9099A3;
+}
+#choice .choice--group__input input {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.5);
+  padding-left: 20px;
+  height: 60px;
+}
+#choice .choice--group__send {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#choice .choice--group__send p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+#choice .choice--group__send button {
+  padding: 15px 60px;
+  background: red;
+  display: flex;
+  align-items: center;
+  font-weight: 900;
+  font-size: 14px;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 10px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+#choice .choice--group__send button:hover {
+  background: transparent;
+  border: 1px solid red;
+  color: red;
+}
+
 /*# sourceMappingURL=style.css.map */
