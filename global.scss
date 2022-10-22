@@ -22,3 +22,22 @@ body{
   justify-content: space-between;
   align-items: center;
 }
+
+@mixin btn{
+  padding: 10px 30px;
+  background: red;
+  display: flex;
+  align-items: center;
+  font-weight: 900;
+  font-size: 14px;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 10px;
+  transition: .4s;
+  cursor: pointer;
+  &:hover{
+    background: transparent;
+    border: 1px solid red;
+    color: red;
+  }
+}
